@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Cinzel&display=swap);
+
+body {
+  margin-top: 0px;
+}
+
+h1 {
+  color: #580b1c;
+  font-family: 'Cinzel', serif;
+}
+
+h2 {
+  color: #493834;
+  font-family: 'Cinzel', serif;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: 'Cinzel', serif;
+}
+
+h4{
+  color: #ffffff;
+}
+
+h1::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  top: -11px;
+  margin-right: 25px;
+  overflow: hidden;
+  border: none;
+  background: #580b1c !important;
+}
+h1::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  top: -11px;
+  margin-left: 25px;
+  overflow: hidden;
+  border: none;
+  background: #580b1c !important;
+}
+
+@media screen and (max-width: 960px){
+  h1::before {
+    content: "";
+    position: relative;
+    display: none;
+    width: 44px;
+    height: 2px;
+    top: -11px;
+    margin-right: 25px;
+    overflow: hidden;
+    border: none;
+    background: #003a5c !important;
+  }
+  h1::after {
+    content: "";
+    position: relative;
+    display: none;
+    width: 44px;
+    height: 2px;
+    top: -11px;
+    margin-left: 25px;
+    overflow: hidden;
+    border: none;
+    background: #003a5c !important;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .h1-responsive {
+    font-size: 2.5rem;
+  }
+}
+
+.btn-new {
+  color: #ffffff;
+  background-color: #580b1c !important;
+  border-color: #580b1c;
+}
+
+.btn-new:hover {
+  color: #fff;
+  background-color: #a88f00 !important;
+  border-color: #a88f00;
+}
+
+ /*///////// Boton ir arriba /////////*/
+ a.scroll-top {
+	color: #fff;
+	display: none;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	z-index: 1000;
+	bottom: 50px;
+	right: 30px;
+	font-size: 20px;
+	background: #a88f00;
+	border-radius: 3px !important;
+	text-align: center;
+	border: 1px solid hsla(0, 0%, 78%, 0.3)
+}
+a.scroll-top:hover {
+  background: #580b1c;
+}
+a.scroll-top i {
+	position: relative;
+	top: 2px;
+}
+/*///////// FIN Boton ir arriba /////////*/
+
+/*///////////////////// EFECTOS PARALLAX PARA ARTICULOS ////////////////*/
+.paralax {
+  position: relative;
+  height: 100vh;
+  background: #ededed url(src/assets/img/ataudes/death-2421820_1920.jpg) no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paralax > *:not(.skiing) {
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  padding: 5px 15px;
+  background: #a88f00 !important;
+}
+
+.paralax-title {
+  margin-bottom: -0.5em;
+  transform: rotate(-6deg);
+}
+
+.skiing:hover {
+  position: absolute;
+  /*right: 40px;*/
+  bottom: 10px;
+  max-width: 250px;
+}
+
+.content {
+  position: relative;
+  padding: 60px 0;
+  background: #f8f9fa !important;
+  text-align: justify;
+} 
+
+#scrollDown {
+  position: absolute;
+  /*right: 40px;*/
+  bottom: 10px;
+  max-width: 150px;
+  text-align: center;
+  z-index: 999;
+  display: block;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.swing {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
+
+@media (max-width:575px){
+  .paralax-title {
+    font-size: 3rem;
+  }
+}
+/*///////////////////// FIN DE EFECTOS PARALLAX PARA ARTICULOS ////////////////*/
+
+/*///////////////////// EFECTOS PARA TITULOS DE ARTICULOS ////////////////*/
+.hgroup {
+ background: linear-gradient(0deg,transparent,rgba(88,11,28,.99)),linear-gradient(0deg,transparent 20%,rgba(88,11,28,.6));
+ text-align: center;
+}
+
+.hgroup-inner {
+  background-image: url(src/assets/img/iconos/content100.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 107px;
+
+}
+
+.drawer-title {
+  color: #ffffff;
+  padding-top: 16px
+}
+
+.progress-bar {
+  background-color: #a88f00 !important;
+}
+
+
+/*///////////////////// FIN DE EFECTOS PARA TITULOS DE ARTICULOS ////////////////*/
+
+.card {
+  border: 1px solid #580b1c;
+}
+.card-header {
+  border-top: 3px solid #a88f00 !important;
+  border-left: 3px solid #a88f00 !important;
+  border-right: 3px solid #a88f00 !important;
+  background: #580b1c !important;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.card-footer {
+  padding: 0px;
+
+}
+
+/*////////// CONTACTS ADDRESS //////////*/
+.contact-box {
+  background-color: #ffffff;
+  border: 1px solid #e7eaec;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.contact-box > a {
+  color: inherit;
+}
+.contact-box.center-version {
+  border: 1px solid #e7eaec;
+  padding: 0;
+}
+.contact-box.center-version > a {
+  display: block;
+  background-color: #ffffff;
+  padding: 0px;
+  text-align: center;
+}
+
+.contact-box.center-version address {
+  margin-bottom: 0;
+}
+.contact-box .contact-box-footer {
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 1px solid #e7eaec;
+  padding: 15px 20px;
+}
+/*/////////// FIN CONTACTS ADDRESS ////////////*/
+
+/*/////////// EFECTOS HOVER PARA IMAGENES DE INSTALACIONES ///////////*/
+.ih-item.square {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #580b1c;
+  box-shadow: 3px 3px 3px rgba(88,11,28,0.3);
+}
+.ih-item.circle.effect1 .info h3 {
+  font-size: 16px;
+}
+/*/////////// FIN DE EFECTOS HOVER PARA IMAGENES DE INSTALACIONES ///////////*/
+
+/*/////////// VALIDACIONES DE INPUTS EN FORMULARIOS ///////////*/
+.valid-tooltip {
+  position: relative;
+}
+
+.invalid-tooltip {
+  position: relative;
+}
+
+.was-validated .form-control:invalid ~ .invalid-tooltip {
+  display: inline-block;
+}
+/*/////////// FIN DE VALIDACIONES DE INPUTS EN FORMULARIOS ///////////*/
+

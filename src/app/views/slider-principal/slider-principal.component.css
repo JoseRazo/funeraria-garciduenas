@@ -1,0 +1,87 @@
+/*///////////////////// SLIDER PRINCIPAL ////////////////*/
+#slider-principal {
+    margin-top: 50px;
+  }
+  
+  .carousel-caption {
+    background: linear-gradient(0deg,transparent,rgba(88,11,28,.5)),linear-gradient(0deg,transparent 20%,rgba(88,11,28,.2));
+    border-radius: 50rem !important;
+    bottom: 35%;
+  }
+  
+  .carousel-control-prev-icon {
+    background-image: url("src/assets/img/iconos/arrow-left-48-white.png");
+    width: 38px;
+    height: 38px;    
+  }
+  
+  .carousel-control-prev-icon:hover {
+    background-image: url("src/assets/img/iconos/arrow-left-48-wine.png");
+    width: 48px;
+    height: 48px;    
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("src/assets/img/iconos/arrow-right-48-white.png");
+    width: 38px;
+    height: 38px; 
+  }
+  
+  .carousel-control-next-icon:hover {
+    background-image: url("src/assets/img/iconos/arrow-right-48-wine.png");
+    width: 48px;
+    height: 48px; 
+  }
+  
+  @media screen and (max-width: 992px) {
+    #slider-principal {
+      margin-top: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #slider-principal {
+      margin-top: 175px;
+    }
+  
+    .carousel-control-prev-icon {
+      background-image: url("src/assets/img/iconos/arrow-left-48-white.png");
+      width: 22px;
+      height: 22px;    
+    }
+  
+    .carousel-control-prev-icon:hover {
+      background-image: url("src/assets/img/iconos/arrow-left-48-wine.png");
+      width: 32px;
+      height: 32px;    
+    }
+  
+    .carousel-control-next-icon {
+      background-image: url("src/assets/img/iconos/arrow-right-48-white.png");
+      width: 22px;
+      height: 22px; 
+    }
+  
+    .carousel-control-next-icon:hover {
+      background-image: url("src/assets/img/iconos/arrow-right-48-wine.png");
+      width: 32px;
+      height: 32px; 
+    }
+  
+  }
+  
+  @media screen and (max-width: 576px) {
+    #slider-principal {
+      margin-top: 149px;
+    }
+  
+    .carousel-caption {
+      bottom: 20px;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1rem;
+    }
+  }
+  
+  /*///////////////////// FIN SLIDER PRINCIPAL ////////////////*/

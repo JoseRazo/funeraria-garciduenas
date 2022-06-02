@@ -1,0 +1,199 @@
+/*////////////////////// HEADER /////////////////////*/
+
+#header {
+    background: transparent;
+    color: #fff;
+  }
+  
+  #header .quick-links a {
+    color: #fff;
+  }
+  
+  #header .quick-links a:hover {
+    color: #580b1c;
+  }
+  
+  .nav-secondary {
+    background: #a88f00 !important;
+  }
+  
+  .nav-secondary .img-phone {
+    width: 40px
+  }
+  
+  .btn-emergencia {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #580b1c !important;
+    border-color: #580b1c;
+  }
+  
+  .btn-emergencia:hover {
+    color: #fff;
+  }
+  
+  .btn-emergencia:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgb(168,143,0,.2);
+    transition: all 1s ease;
+  }
+  .btn-emergencia:hover:before {
+    width: 100%;
+  }
+  
+  .nav-secondary-responsive-invisible {
+    visibility: hidden !important;
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-secondary-invisible {
+      visibility: hidden !important;
+      display: none;
+    }
+  
+    .nav-secondary-responsive-invisible {
+      visibility: visible !important;
+      display: inherit;
+    }
+  }
+  
+  nav {
+    background: linear-gradient(0deg,transparent,rgba(88,11,28,.99)),linear-gradient(0deg,transparent 20%,rgba(88,11,28,.6));
+    border-color: rgba(255,255,255,0.1);
+    border-top-color: transparent;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    z-index: 1;
+  }
+  
+  nav .navbar-brand {
+    font-size: 100%;
+  }
+  
+  nav .navbar-brand img {
+    width: 260px;
+  }
+  
+  nav a {
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav li:hover {
+    background: linear-gradient(0deg,transparent,rgba(168,143,0,.99)),linear-gradient(0deg,transparent 20%,rgba(168,143,0,.6));
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .dropdown-menu {
+    background-color: rgb(88,11,28,0.5);
+    border-top: 2px solid #a88f00;
+  }
+  
+  .dropdown-item {
+    color: #ffffff;
+  }
+  
+  .dropdown-item:hover {
+   background-color: #a88f00 !important;
+  }
+  
+  li.dropdown:hover > .dropdown-menu {
+    display: block; 
+    margin: auto
+  }
+  
+  nav .navbar-toggle {
+    margin: 13px 15px 13px 0;
+  }
+  
+  header nav.nav-secondary.shrink {
+    visibility: hidden;
+    display: none;
+  }
+  
+  nav.navbar.shrink {
+    min-height: 35px;
+    background-color: #580b1c !important;
+  }
+  
+  nav.navbar.shrink img {
+    width: 120px;
+  }
+  
+  nav.navbar.shrink .navbar-brand {
+    font-size: 25px;
+  }
+  
+  nav.navbar.shrink a {
+    font-size: 15px;
+    padding-bottom: 1px !important;
+    padding-top: 1px !important;
+  }
+  
+  nav.navbar.shrink.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  nav.navbar.shrink .dropdown-menu {
+    background-color: #580b1c !important;
+  }
+  
+  nav.navbar.shrink ul li:hover {
+    background: linear-gradient(0deg,transparent,rgba(168,143,0,.99)),linear-gradient(0deg,transparent 20%,rgba(168,143,0,.6));
+  }
+  
+  nav.navbar.shrink .navbar-toggle {
+    margin: 8px 15px 8px 0;
+    padding: 4px 5px;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .navbar-light .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+   }
+  
+   .navbar-nav li:hover {
+    background: transparent;
+  }
+  
+  .dropdown-menu {
+    border: 1px solid #a88f00;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+  }
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      background: #580b1c !important;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    nav .navbar-brand img {
+      width: 190px;
+    }
+  }
+  /*////////////////////// FIN HEADER /////////////////////*/
